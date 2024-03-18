@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if command -v overmind > /dev/null; then
+  overmind start --procfile Procfile.dev
+elif command -v foreman > /dev/null; then
+  foreman start --procfile Procfile.dev
+else
+  printf "%s\n" "ERROR: Unable to start application."
+  printf "%s\n" "       Neither Foreman or Overmind is installed."
+
+  exit 1
+fi
