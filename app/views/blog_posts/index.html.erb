@@ -3,7 +3,7 @@
 <% @blog_posts.each do |post| %>
   <div>
     <h2><%= link_to post.title, post %></h2>
-    <%= post.body %>
+    <%= post.content %>
     <% if post.draft? %>
       <div class="p-2 rounded bg-gray-100 text-gray-900">Draft</div>
     <% elsif post.scheduled? %>
