@@ -14,8 +14,8 @@
   </div>
 
   <div>
-    <%= form.label :body %>
-    <%= form.text_area :body %>
+    <%= form.label :content %>
+    <%= form.rich_text_area :content %>
   </div>
 
   <div>
@@ -23,5 +23,5 @@
     <%= form.datetime_select :published_at, include_blank: true %>
   </div>
 
-  <%= form.button %>
+  <%= form.button class: "bg-green-300 hover:bg-green-700 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" %>
 <% end %>
