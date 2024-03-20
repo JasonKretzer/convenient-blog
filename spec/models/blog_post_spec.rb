@@ -35,7 +35,7 @@ RSpec.describe BlogPost, type: :model do
 
     context "published_at is future" do
       it "scheduled? should return true for scheduled blog posts" do
-        expect(scheduled.scheduled?).to eq(false)
+        expect(scheduled.scheduled?).to eq(true)
       end
 
       it "scheduled? should return false for draft blog posts" do
