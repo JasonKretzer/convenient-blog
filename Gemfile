@@ -55,6 +55,11 @@ group :development, :test do
   gem "debug", platforms: %i[mri mingw x64_mingw]
   gem "rspec-rails"
   gem "factory_bot_rails"
+  gem "pry"
+  gem "pry-rails"
+  gem "pry-byebug"
+  gem "pry-rescue"
+  gem "pry-stack_explorer"
 end
 
 group :development do
@@ -84,3 +89,5 @@ gem "devise", "~> 4.9"
 gem "tailwindcss-rails", "~> 2.3"
 # bundle add tailwindcss-rails
 # rails tailwindcss:install
+
+gem "pagy", "~> 7.0"
