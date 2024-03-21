@@ -11,3 +11,8 @@
     <% end %>
   </div>
 <% end %>
+<% if @pagy.count > @pagy.items %>
+  <div class="flex justify-center items-center mt-10">
+    <%== pagy_nav(@pagy) %>
+  </div>
+<% end %>
